@@ -7,6 +7,6 @@ document.addEventListener('click', (e) => {
     return;
   }
 
-  img.style.top = e.clientY - img.clientHeight / 2 + 'px';
-  img.style.left = e.clientX - img.clientWidth / 2 + 'px';
+  img.style.top = e.offsetY - img.clientHeight / 2 + 'px';
+  img.style.left = e.offsetX - img.clientWidth / 2 + 'px';
 });
